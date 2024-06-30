@@ -74,8 +74,8 @@ async def token(auth_data: dict):
 
 @router.post("/create-player/{tg_id}")
 async def create_player(tg_id: int):
-    await Player.create(tg_id=tg_id)
-    return {"success": True}
+    player = await Player.create(tg_id=tg_id)
+    return player
 
 # @router.get("/friends")
 # async def get_friends(player: Player = Depends(get_current_player)):
