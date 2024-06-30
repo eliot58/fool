@@ -14,11 +14,9 @@ SECRET_AUTH = os.environ.get("SECRET_AUTH")
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
-ADMIN = os.environ.get("ADMIN")
-
 APPS_MODELS = [
     "src.player.models",
-    "src.store.models",
+    "src.game.models",
     "aerich.models",
 ]
 
