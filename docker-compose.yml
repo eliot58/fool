@@ -4,7 +4,7 @@ services:
   db:
     image: postgres:15
     restart: always
-    container_name: db
+    container_name: fool_db
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     env_file:
